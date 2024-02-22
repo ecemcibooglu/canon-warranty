@@ -1,0 +1,362 @@
+/* ***** Required variables ******
+
+-—primary-color 
+
+****** General ******
+
+Import necessary fonts, add scroll-behavior, body styling, and basic typography
+
+***** Buttons ****** 
+
+Include styling for the primary and / or secondary buttons, plus the form buttons
+
+#form-container button, #form-container button:hover, .sp-cta-btn and .sp-cta-btn:hover selectors should be included in the styling of the primary button, so the signup pages don’t break
+
+****** Additional sections ******
+
+styling for LOGO and NEWS POST 
+
+****** Signup pages *******
+
+Make sure to set a dark color for the background of the signup page in the class .sp-dark-bg (in the signup page CSS - the color changes per vendor) and check if the primary-color matches it; otherwise set another variable color as the main color for the signup page.
+
+*/
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #666;
+  }
+  
+  /* - - - - - - - - - - FONTS - - - - - - - - - - */
+  
+  @import url("https://fonts.cdnfonts.com/css/gotham");
+  
+  /* - - - - - - - - - - GENERAL - - - - - - - - - - */
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Gotham SSm A, Gotham SSm B, Gotham, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #323232;
+  }
+  
+  /* - - - - - - - - - - HEADINGS AND TEXT - - - - - - - - - - */
+  
+  p {
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 46px;
+    line-height: 66px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    line-height: 44px;
+  }
+  
+  h4 {
+    font-size: 22px;
+    line-height: 1.5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 34px;
+      line-height: 48px;
+    }
+  
+    h2 {
+      font-size: 28px;
+      line-height: 1.5;
+    }
+  
+    h3 {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  
+    h4 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+  }
+  
+  .navbar-light:focus, .navbar-nav:focus, .nav-link:focus, .navbar-light:hover, .navbar-nav:hover, .nav-link:hover {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+      color: #000!important;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+      color: #000!important;
+  }
+  
+  a {
+    color: #666 ;
+    text-decoration: none;
+  }
+  
+  a:hover, a:visited {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  /* - - - - - - - - - - BUTTONS - - - - - - - - - - */
+  
+  .btn,
+  .sp-cta-btn,
+  form button {
+    border-radius: 32px;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.15rem;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .sp-cta-btn,
+  form button {
+    background-color: #009bd4 !important;
+    color: #fff !important;
+    border: 2px solid #009bd4 !important;
+  }
+  
+  .sp-cta-btn:hover,
+  form button:hover {
+    background-color: #0071b8 !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: 2px solid #0071b8 !important;
+  }
+  
+  .btn-primary {
+    margin-right: auto;
+    display: block;
+    background-color: #009bd4 !important;
+    color: white !important;
+    border: 2px solid #009bd4 !important;
+    transition: none;
+    border-radius: 45px;
+  }
+  .btn-primary:hover {
+    margin-right: auto;
+    display: block;
+    background-color: #0071b8 !important;
+    color: white !important;
+    border: 2px solid #0071b8 !important;
+    transition: none;
+    border-radius: 45px;
+  }
+  
+  /* - - - - - - - - - - BACKGROUND-COLORS - - - - - - - - - - */
+  
+  .black-bg {
+    background-color: #000;
+  }
+  
+  .light-grey-bg {
+    background-color: #e2e4e4;
+  }
+  
+  .lightest-grey-bg {
+    background-color: #f5f6f6;
+  }
+  
+  .sand-bg {
+    background-color: #dfd1a7;
+  }
+  
+  .red {
+    color: #cc0000;
+  }
+  /* NEWS POSTS */
+  
+  .img-responsive {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 185px !important;
+  }
+  
+  .brand-logo {
+    max-height: 80px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand-logo img {
+    max-height: inherit !important;
+    max-width: 100% !important;
+  }
+  
+  .jumbotron {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .jumbotron::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .jumbotron > * {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .news {
+    font-family: Gotham SSm A, Gotham SSm B, Arial, Helvetica, sans-serif !important;
+    font-weight: 400;
+  }
+  
+  .news p {
+    color: #666;
+    font-weight: 400;
+    overflow-wrap: break-word;
+  }
+  
+  .news h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27px;
+  }
+  
+  .news p a {
+    font-weight: 600;
+    line-height: 24px;
+    color: #0071b8;
+    text-decoration: none;
+  }
+  
+  .news p a:hover {
+    text-decoration: underline #0071b8;
+    color: #0071b8;
+  }
+  
+  .jumbotron h1 {
+    font-size: 2.6rem !important;
+    color: white !important;
+    margin-top: 5%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .jumbotron h1 {
+      font-size: 2.1rem !important;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .jumbotron h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .card-body .card-title {
+    color: #1c355e !important;
+    font-size: 20px;
+  }
+  
+  .card-body p {
+    font-size: 15px;
+  }
+  
+  .card .img-responsive {
+    width: 100%;
+    height: auto;
+    min-height: 174px;
+    max-height: 200px !important;
+  }
+  
+  .tag-button {
+    background-color: #0071b8 !important;
+    color: white !important;
+    display: inline;
+    border: 2px solid #0071b8 !important;
+  }
+  
+  .tag-button:hover {
+    background-color: transparent !important;
+    color: #0071b8 !important;
+    border: 2px solid #0071b8 !important;
+    display: inline;
+  }
+  
+  .card {
+    min-height: 96% !important;
+    height: auto !important;
+  }
+  
+  .brandcontainer{
+  height: 300px;
+  margin: 15px 0px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+      }
+      
+  .brandcontainer h1{
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: auto !important;
+  top: auto !important;
+  
+  }

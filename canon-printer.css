@@ -1,0 +1,262 @@
+.header {
+    background-image: url("../warranty-img/desktop-header.png");
+    background-position: 50% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-fr {
+    background-image: url("../warranty-img/desktop-header-fr.png");
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.f-600 {
+    font-weight: 600;
+}
+
+.desktop-screen {
+    display: inline-block;
+}
+
+.mobile-screen {
+    display: none;
+}
+
+.form-bg {
+    background-color: #dfd2a7!important;
+}
+
+.popup-img:hover {
+transition: all .2s ease-in;
+transform: scale(1.1);
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pro-title {
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 52px !important;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.text-28 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.canon-link {
+color: #CC0000 !important;
+text-decoration: none !important;
+}
+
+.canon-link:hover {
+color: #CC0000 !important;
+text-decoration: underline !important;
+}
+
+.product-btn {
+    font-weight: 600!important;
+    background-color: #CC0000 !important;
+    border-radius: 25px!important;
+    color: white !important;
+    border: 5px solid #CC0000 !important;
+    padding: 10px 25px !important;
+    white-space: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-btn:hover {
+    font-weight: 600!important;
+    background-color: transparent !important;
+    border-radius: 25px!important;
+    color: #CC0000 !important;
+    border: 5px solid #CC0000 !important;
+    padding: 10px 25px !important;
+    white-space: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1400px) {
+.header {
+    background-position: 50% 25%;
+}
+.header-fr {
+    background-position: 50% 25%;
+}
+}
+
+@media screen and (max-width: 992px) {
+h1 {
+    line-height: 49px;
+    }
+    
+   .desktop-screen {
+    display: none;
+}
+
+.mobile-screen {
+    display: inline-block;
+}
+
+    .mb-mobile {
+        margin-bottom: 5%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .text-28 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .text-28 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+/* Form */
+
+form input {
+    margin: 0.3rem 0;
+    border: none;
+    padding: 0 20px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+form input:not([type="checkbox"]) {
+    width: 85%;
+    height: 45px;
+}
+
+form label {
+    display: none;
+}
+
+form label[for="fieldinformation"] {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+form input[type="checkbox"] {
+    width: 2%;
+}
+
+form input:focus {
+    border: 2px solid #f7f7f7;
+    background: #fff;
+    outline: 0;
+}
+
+form button {
+    margin-top: 1.5rem;
+}
+
+form input[type="checkbox"] {
+    margin-top: 1rem;
+}
+
+.fieldinformation.checkbox {
+    margin-bottom: 2rem;
+}
+
+.checkbox label {
+    display: inline;
+}
+
+.fieldapplication_area label[for="fieldapplication_area"] {
+    width: 100%;
+    display: block;
+}
+
+#field-website {
+    display: none;
+}
+
+form button {
+    background-color: #cc0000 !important;
+    border-radius: 25px;
+    color: white !important;
+    border: 2px solid #cc0000 !important;
+    padding: 10px 25px !important;
+}
+
+form button:hover {
+    background-color: transparent !important;
+    border-radius: 25px;
+    color: #cc0000 !important;
+    border: 2px solid #cc0000 !important;
+    padding: 10px 25px !important;
+}
+
+/* col-xxl */
+
+@media screen and (min-width: 1600px) {
+    .col-xxl-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
